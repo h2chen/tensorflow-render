@@ -1,4 +1,4 @@
-# Starter for deploying [fast.ai](https://www.fast.ai) models on [Render](https://render.com)
+# Starter for deploying [tensorflow 2.0] models on [Render](https://render.com)
 
 This repo can be used as a starting point to deploy [tensorflow 2.0] models on Render.
 
