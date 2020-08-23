@@ -8,7 +8,7 @@ from PIL import Image
 from tensorflow import keras
 from tensorflow.keras.applications.resnet50 import ResNet50, preprocess_input
 import numpy as np
-from keras.utils.data_utils import get_file
+from tensorflow.keras.utils.data_utils import get_file
 from io import BytesIO
 from starlette.applications import Starlette
 from starlette.middleware.cors import CORSMiddleware
