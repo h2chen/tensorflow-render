@@ -43,11 +43,11 @@ async def setup_learner():
     try:
         #learn = load_learner(path, export_file_name)        
         #learn = keras.models.load_model("app/"+export_file_name)
-        #with open(model_config_name, "r") as text_file:
-        #    json_string = text_file.read()
-        #learn = keras.models.model_from_json(json_string)
-        #learn.load_weights(model_file_name)
-        learn = keras.models.load_model(model_path)
+        with open(model_config_name, "r") as text_file:
+            json_string = text_file.read()
+        learn = keras.models.model_from_json(json_string)
+        learn.load_weights(model_file_name)
+        #learn = keras.models.load_model(model_path)
         
         return learn
     except RuntimeError as e:
