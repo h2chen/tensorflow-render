@@ -2,8 +2,8 @@ import aiohttp
 import asyncio
 import uvicorn
 import sys
-#from fastai import *
-#from fastai.vision import *
+from fastai import *
+from fastai.vision import *
 import tensorflow as tf
 from PIL import Image
 from tensorflow import keras
@@ -23,7 +23,7 @@ model_config_name = 'app/models/model.config'
 model_file_name = 'app/models/best_model.h5'
 
 classes = ['0', '1', '2', '3']
-#path = Path(__file__).parent
+path = Path(__file__).parent
 img_size = 224
 app = Starlette()
 app.add_middleware(CORSMiddleware, allow_origins=['*'], allow_headers=['X-Requested-With', 'Content-Type'])
@@ -68,8 +68,8 @@ loop.close()
 
 @app.route('/')
 async def homepage(request):
-#     html_file = path / 'view' / 'index.html'
-    html_file =  '/view/index.html'
+    html_file = path / 'view' / 'index.html'
+    print(html_file, type(html_file) )
     return HTMLResponse(html_file.open().read())
 
 
