@@ -5,13 +5,6 @@ import sys
 from fastai import *
 from fastai.vision import *
 import tensorflow as tf
-
-assert tf.version.VERSION.startswith('2.')
-gpus = tf.config.experimental.list_physical_devices('GPU')
-
-tf.config.experimental.set_virtual_device_configuration(gpus[0], 
-   [tf.config.experimental.VirtualDeviceConfiguration(memory_limit=256)])
-
 from PIL import Image
 from tensorflow import keras
 from tensorflow.keras.applications.resnet50 import ResNet50, preprocess_input
