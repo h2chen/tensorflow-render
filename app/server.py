@@ -22,7 +22,7 @@ model_config_name = 'app/models/model.config'
 model_file_name = 'app/models/best_model.h5'
 
 classes = ['0', '1', '2', '3']
-path = Path(__file__).parent
+#path = Path(__file__).parent
 img_size = 224
 app = Starlette()
 app.add_middleware(CORSMiddleware, allow_origins=['*'], allow_headers=['X-Requested-With', 'Content-Type'])
