@@ -69,7 +69,7 @@ loop.close()
 @app.route('/')
 async def homepage(request):
     html_file = path / 'view' / 'index.html'
-    print(html_file, type(html_file) )
+    print(html_file)
     return HTMLResponse(html_file.open().read())
 
 
