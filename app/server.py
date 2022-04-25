@@ -1,8 +1,8 @@
 import aiohttp
 import asyncio
 import uvicorn
-from fastai import *
-from fastai.vision import *
+#from fastai import *
+#from fastai.vision import *
 import tensorflow as tf
 from PIL import Image
 from tensorflow import keras
