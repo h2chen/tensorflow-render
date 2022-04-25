@@ -8,3 +8,4 @@ pillow>=9.0.1
 python-multipart==0.0.5
 tensorflow==2.8.0
 opencv-python==4.4.0.42
+fastai==1.0.61
